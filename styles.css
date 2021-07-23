@@ -80,7 +80,7 @@ ul#player-choice li a, ul#npc-choice li a {
 	opacity: .2;
 }
 
-ul#player-choice li a:hover {
+ul#player-choice li a:hover, ul#player-choice li a.selected, ul#npc-choice li a.selected {
 	opacity: 1;
 }
 
