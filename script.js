@@ -1,3 +1,4 @@
+
 var player_choice = 0;
 var npc_choice = 0;
 var winner = -1;
