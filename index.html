@@ -12,11 +12,18 @@
 			}
 
 			#scoreboard {
-
+				display:  flex;
+				align-items: center;
+				justify-content: center;
 			}
 
-			#player {
-
+			#player, #npc{
+				position: relative;
+				flex-grow: 1;
+				border-radius: 5px;
+				width: 200px;
+				padding: 20px;
+				color: #fff;
 			}
 		</style>
 	</head>
@@ -27,24 +34,24 @@
 			<div id="scoreboard">
 
 				<div id="player">
-					<h2 id="player-name">OWNADO</h2>
+					<h2 id="player-name">JOGADOR CARO</h2>
 					<span id="player-points">0</span>
 					<ul id="player-choice">
-						<li><a id="player-choice1"><img src="./img/pedra.png"></a></li>
-						<li><a id="player-choice1"><img src="./img/papel.png"></a></li>
-						<li><a id="player-choice1"><img src="./img/tesoura.png"></a></li>
+						<li><a id="player-choice1"><img src="./assets/maos/1x/paper.png"></a></li>
+						<li><a id="player-choice2"><img src="./assets/maos/1x/rock.png"></a></li>
+						<li><a id="player-choice3"><img src="./assets/maos/1x/scissors.png"></a></li>
 					</ul>
 				</div>
 
 				<div id="versus">vs</div>
 
-				<div id="player">
-					<h2 id="player-name">OWNADO</h2>
-					<span id="player-points">0</span>
-					<ul id="player-choice">
-						<li><a id="player-choice1"><img src="./img/pedra.png"></a></li>
-						<li><a id="player-choice1"><img src="./img/papel.png"></a></li>
-						<li><a id="player-choice1"><img src="./img/tesoura.png"></a></li>
+				<div id="npc">
+					<h2 id="npc-name">OWNADO</h2>
+					<span id="npc-points">0</span>
+					<ul id="npc-choice">
+						<li><a id="npc-choice1"><img src="./assets/maos/1x/paper.png"></a></li>
+						<li><a id="npc-choice2"><img src="./assets/maos/1x/rock.png"></a></li>
+						<li><a id="npc-choice3"><img src="./assets/maos/1x/scissors.png"></a></li>
 					</ul>
 				</div>
 
