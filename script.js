@@ -11,25 +11,35 @@ function play(choice){
 	// 3 - Tesoura
 	if(player_choice == 1){
 		if(npc_choice == 1)
-			alert(0);
+			winner = 0;
 		else if(npc_choice == 2)
-			alert(2);
+			winner = 2;
 		else
-			alert(1);
+			winner = 1;
 	}else if(player_choice == 2){
 		if(npc_choice == 1)
-			alert();
+			winner = 1;
 		else if(npc_choice == 2)
-			alert();
+			winner = 0;
 		else
-			alert();
+			winner = 2;
 	}else{
 		if(npc_choice == 1)
-			alert();
+			winner = 2;
 		else if(npc_choice == 2)
-			alert();
+			winner = 1;
 		else
-			alert();
+			winner = 0;
 	}
+
+	document.getElementById("player_choice" + player_choice).classList.add('selected');
+	document.getElementById("npc_choice" + npc_choice).classList.add('selected');
+
+	if(winner == 0)
+		document.getElementById('messages').innerHTML = 'NO WINNER!';
+	else if(winner == 1)
+		document.getElementById('messages').innerHTML = 'JOGADOR CARO WINS!';
+	else
+		document.getElementById('messages').innerHTML = 'Computer WINS!';
 
 }
