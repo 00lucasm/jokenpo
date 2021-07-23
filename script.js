@@ -1,6 +1,6 @@
 var player_choice = 0;
 var npc_choice = 0;
-var winner = 0;
+var winner = -1;
 
 function play(choice){
 	player_choice = choice;
@@ -11,11 +11,11 @@ function play(choice){
 	// 3 - Tesoura
 	if(player_choice == 1){
 		if(npc_choice == 1)
-			alert();
+			alert(0);
 		else if(npc_choice == 2)
-			alert();
+			alert(2);
 		else
-			alert();
+			alert(1);
 	}else if(player_choice == 2){
 		if(npc_choice == 1)
 			alert();
