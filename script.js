@@ -32,8 +32,8 @@ function play(choice){
 			winner = 0;
 	}
 
-	document.getElementById("player_choice" + player_choice).classList.add('selected');
-	document.getElementById("npc_choice" + npc_choice).classList.add('selected');
+	document.getElementById("player-choice" + player_choice).classList.add('selected');
+	document.getElementById("npc-choice" + npc_choice).classList.add('selected');
 
 	if(winner == 0)
 		document.getElementById('messages').innerHTML = 'NO WINNER!';
