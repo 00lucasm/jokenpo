@@ -1,6 +1,15 @@
+
 * {
+	margin: 0;
+	padding: 0;
 	font-family: Helvetica;
 	font-weight: 400;
+}
+
+#title {
+	color: #3B3B98;
+	text-align: center;
+	margin: 20px 0 0 0;
 }
 
 #scoreboard {
@@ -13,17 +22,18 @@
 	position: relative;
 	flex-grow: 1;
 	border-radius: 5px;
+	margin: 30px;
 	width: 200px;
-	padding: 20px;
+	padding: 30px;
 	color: #fff;
 }
 
 #player {
-	background-color: #f3a683;
+	background-color: #ff4d4d;
 }
 
 #npc {
-	background-color: #c7ecee;
+	background-color: #ffaf40;
 }
 
 #versus {
@@ -45,6 +55,16 @@
 	text-align: right;
 }
 
+#player-points, #npc-points {
+	position: absolute;
+	top: 8px;
+	font-size: 32px;
+}
+
+#player-points {
+	right: 35px;
+}
+
 ul#player-choice, ul#npc-choice {
 	list-style: none;
 	text-align: center;
@@ -64,6 +84,14 @@ ul#player-choice li a:hover {
 	opacity: 1;
 }
 
-ul#jogador-escolha li a img, ul#npc-choice li a img {
+ul#jogador-escolha li a, ul#npc-choice li a {
 	max-width: 80px;
+}
+
+#messages{
+	background-color: #c7ecee;
+	font-size: 32px;
+	border-radius: 5px;
+	margin: 30px;
+	padding: 20px;
 }
